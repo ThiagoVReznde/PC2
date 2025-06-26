@@ -34,7 +34,7 @@ public class Casa{
         System.out.println("");
 
         for(int i = 0; i < qnt_comodos; i++){
-            System.out.println(i+1 + "- " + get_Comodo_nome(i));
+            System.out.println(i+1 + "- " + comodos[i].get_nome);
         }
     
         System.out.println("");
@@ -44,7 +44,7 @@ public class Casa{
         int soma = 0;
 
         for(int i = 0; i < qnt_comodos; i++){
-            soma += comodos[i].area;
+            soma += comodos[i].get_area;
         }
         
         return soma;
