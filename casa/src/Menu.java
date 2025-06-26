@@ -35,8 +35,7 @@ public class Menu{
                     area = scan.nextInt();
                     System.out.println("");
 
-                    Comodo novo_comodo = new Comodo(nome, area);
-                    casa.set_Comodo(novo_comodo);
+                    casa.set_Comodo(nome, area);
 
                     break;
                 case 2:
@@ -46,7 +45,6 @@ public class Menu{
                 case 3:
                     System.out.println("Area - " + casa.Calc_Area_Total() + " m2");
                     System.out.println("");
-
 
                     break;
                 case 4:
