@@ -12,13 +12,13 @@ public class Casa{
         comodos = new Comodo[max_comodos];
     }
 
-    void set_Comodo(Comodo new_comodo){
+    void set_Comodo(String nome_Comodo, int area_Comodo){
         if (qnt_comodos == max_comodos) {
             System.out.println("Casa nao tem mais comodos disponiveis");
             return;
         }
 
-        comodos[qnt_comodos] = new_comodo;
+        comodos[qnt_comodos] = new Comodo(nome_Comodo, area_Comodo);
         qnt_comodos++;
     }
 
